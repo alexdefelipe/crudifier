@@ -51,7 +51,7 @@ public YOUR_ENTITY_SERVICE(final YOUR_ENTITY_REPOSITORY repository) {
 ```
 - Define controllers (using the URL path mapping of your choice) extending: CrudController<YOUR_ENTITY, YOUR_ENTITYS_ID> (no extra logic required)
 
-- Add the following bean in any configuration class (to avoid Jackson bug describen below):
+- Add the following bean in any configuration class (to avoid Jackson bug described below):
 ```
 @Bean
 public Jackson2ObjectMapperBuilderCustomizer addCustomSerializationFeatures() {
